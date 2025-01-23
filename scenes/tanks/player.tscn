@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cysdq1cxhc2up"]
+[gd_scene load_steps=6 format=3 uid="uid://cysdq1cxhc2up"]
 
 [ext_resource type="PackedScene" uid="uid://cjdebfjymrth" path="res://scenes/tanks/Tank.tscn" id="1_rscbs"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="2_i823x"]
 [ext_resource type="Texture2D" uid="uid://dljijpkqumutr" path="res://assets/images/tankbody.png" id="2_kmhdx"]
 [ext_resource type="Texture2D" uid="uid://dkmytd6rrlpfh" path="res://assets/images/tankweapon1.png" id="3_d6ur6"]
 
@@ -8,6 +9,7 @@
 size = Vector2(60, 28)
 
 [node name="Player" instance=ExtResource("1_rscbs")]
+script = ExtResource("2_i823x")
 
 [node name="Body" parent="." index="0"]
 texture = ExtResource("2_kmhdx")
