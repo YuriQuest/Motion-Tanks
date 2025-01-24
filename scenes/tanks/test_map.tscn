@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://ugyqers5cukn"]
+[gd_scene load_steps=3 format=3 uid="uid://ugyqers5cukn"]
 
 [ext_resource type="PackedScene" uid="uid://cysdq1cxhc2up" path="res://scenes/tanks/player.tscn" id="1_kq03b"]
+[ext_resource type="PackedScene" uid="uid://wcabokrfs6xg" path="res://scenes/tanks/boss.tscn" id="2_g6esw"]
 
-[node name="test map" type="Node2D"]
+[node name="test_map" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_kq03b")]
 position = Vector2(179, 99)
+
+[node name="Boss" parent="." instance=ExtResource("2_g6esw")]
+position = Vector2(267, 209)

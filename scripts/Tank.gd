@@ -6,6 +6,8 @@ signal health_changed
 signal dead
 
 @export var Bullet: PackedScene
+@export var aim_path: String
+
 @export var speed: int = 200
 @export var rotation_speed: float = 5.0
 @export var gun_cooldown: float = 0.5

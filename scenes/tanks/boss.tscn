@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://wcabokrfs6xg"]
+
+[ext_resource type="PackedScene" uid="uid://cjdebfjymrth" path="res://scenes/tanks/Tank.tscn" id="1_oo3d7"]
+[ext_resource type="Texture2D" uid="uid://dljijpkqumutr" path="res://assets/images/tankbody.png" id="2_nhgf4"]
+[ext_resource type="Script" path="res://scripts/boss.gd" id="2_w3wqp"]
+[ext_resource type="Texture2D" uid="uid://dkmytd6rrlpfh" path="res://assets/images/tankweapon1.png" id="3_diynv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4o226"]
+size = Vector2(60, 28)
+
+[node name="Boss" instance=ExtResource("1_oo3d7")]
+script = ExtResource("2_w3wqp")
+
+[node name="Body" parent="." index="0"]
+modulate = Color(1, 0.29, 0.301833, 1)
+texture = ExtResource("2_nhgf4")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("RectangleShape2D_4o226")
+
+[node name="weapon" parent="." index="2"]
+modulate = Color(1, 0.290196, 0.301961, 1)
+position = Vector2(5, 0)
+texture = ExtResource("3_diynv")
+offset = Vector2(10, 0)
