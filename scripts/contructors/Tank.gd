@@ -21,6 +21,10 @@ func _ready():
 	if $GunTimer:
 		$GunTimer.wait_time = gun_cooldown
 	
+func weapon_look(value):
+	if $weapon:
+		$weapon.look_at(value)
+
 func control():
 	# Esta função será sobrescrita pelos filhos
 	pass
